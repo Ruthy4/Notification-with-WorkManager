@@ -27,11 +27,11 @@ class WorkerClass(context: Context, workerParams: WorkerParameters) : Worker(con
 
             val notificationBuilder = NotificationCompat.Builder(context, CHANNEL_ID)
                 .setSmallIcon(R.drawable.ic_notifications)
-                .setContentTitle("You have a notification")
-                .setContentText("This is a really long notification, that cant fit in one line")
+                .setContentTitle("New Word")
+                .setContentText("New Word Added")
                 .setStyle(
                     NotificationCompat.BigTextStyle()
-                        .bigText("This is a really long notification, that cant fit in one line")
+                        .bigText("New Word Added")
                 )
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT)
                 .setAutoCancel(true)
